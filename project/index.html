@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="taskManager">
+        <style>
+            h1 {
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration: underline;
+            }
+            html, body {
+            height: 100%;
+            margin: 0;
+        }
+            body {
+                 background-image: url('https://img.freepik.com/fotos-premium/diario-preto_670147-23418.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1698451200&semt=ais');
+                 background-size: cover; 
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 justify-content: center;
+                 color: #181414;
+            }
+        </style>
+        <h1>LISTA DE TAREFAS</h1>
+        <div id="taskInput">
+            <input type="text" id="taskDescription" placeholder="Escreva a Nova Tarefa">
+            <button onclick="addTask()">ADICIONAR</button>
+        </div>
+        <div id="taskList"></div>
+        <div id="taskStats"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1"></script>
+    <script src="js.js"></script>
+</body>
+</html>

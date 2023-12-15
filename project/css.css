@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#taskManager {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#taskInput {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskDescription {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #282828;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9A9A9A;
+}
+
+#taskList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.task {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.priority {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+.reminder-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#taskStats {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+#taskStats span {
+    color: #e44d26;
+    font-weight: bold;
+}
